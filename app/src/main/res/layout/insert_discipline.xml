@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/nameText"
+        android:layout_width="64dp"
+        android:layout_height="40dp"
+        android:text="Name"
+        android:layout_margin="32dp"
+        android:gravity="left|center_vertical"/>
+
+    <EditText
+        android:id="@+id/nameDiscipline"
+        android:layout_width="256dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:layout_toEndOf="@+id/nameText"
+        android:inputType="textShortMessage"/>
+
+    <TextView
+        android:id="@+id/creditsText"
+        android:layout_width="64dp"
+        android:layout_height="40dp"
+        android:text="Credits"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="left|center_vertical"
+        android:layout_below="@+id/nameText"/>
+
+    <EditText
+        android:id="@+id/creditsDiscipline"
+        android:layout_width="256dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_toEndOf="@+id/creditsText"
+        android:inputType="number"
+        android:layout_below="@+id/nameDiscipline"/>
+
+    <TextView
+        android:id="@+id/yearText"
+        android:layout_width="64dp"
+        android:layout_height="40dp"
+        android:text="Year"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="left|center_vertical"
+        android:layout_below="@+id/creditsText"/>
+
+    <EditText
+        android:id="@+id/yearDiscipline"
+        android:layout_width="256dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_toEndOf="@+id/yearText"
+        android:inputType="number"
+        android:layout_below="@id/creditsDiscipline"/>
+
+    <TextView
+        android:id="@+id/semesterText"
+        android:layout_width="64dp"
+        android:layout_height="40dp"
+        android:text="Semester"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="left|center_vertical"
+        android:layout_below="@+id/yearText"/>
+
+    <EditText
+        android:id="@+id/semesterDiscipline"
+        android:layout_width="256dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_toEndOf="@+id/semesterText"
+        android:inputType="number"
+        android:layout_below="@id/yearDiscipline"/>
+
+    <TextView
+        android:id="@+id/evaluationsText"
+        android:layout_width="64dp"
+        android:layout_height="40dp"
+        android:text="Nº Evals"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="left|center_vertical"
+        android:layout_below="@+id/semesterText"/>
+
+    <EditText
+        android:id="@+id/evaluationsDiscipline"
+        android:layout_width="256dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_toEndOf="@+id/evaluationsText"
+        android:inputType="number"
+        android:layout_below="@id/semesterDiscipline"/>
+
+    <Button
+        android:id="@+id/addDiscipline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="64dp"
+        android:backgroundTint="@color/orange"
+        android:text="Insert Discipline"
+        android:textSize="16dp"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>

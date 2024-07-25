@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/preData"
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Load Pre-defined data" />
+
+    <Button
+        android:id="@+id/insertDiscipline"
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/preData"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"
+        android:text="Insert Discipline" />
+
+
+    <Button
+        android:id="@+id/removeDiscipline"
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/insertDiscipline"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"
+        android:text="Remove Discipline" />
+
+    <Button
+        android:id="@+id/insertGrade"
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/removeDiscipline"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"
+        android:text="Insert Grades" />
+
+    <Button
+        android:id="@+id/showDisciplines"
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/insertGrade"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"
+        android:text="Show Disciplines" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/showDisciplines"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"
+        android:text="Save Data" />
+    />
+
+    <Button
+        android:id="@+id/cleanData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/saveButton"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="32dp"
+        android:backgroundTint="@color/orange"
+        android:textColor="@color/white"
+        android:text="CLEAN ALL DATA\n(press 2x)" />
+
+    <TextView
+        android:id="@+id/average"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="32dp"
+
+        android:layout_margin="32dp"
+        android:text="0.0"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Copyright© 2024\nPedro Ferreira"
+        android:textColor="@color/orange"
+        android:layout_margin="32dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/totalCredits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="32dp"
+
+        android:text="0 ETS"
+        android:textColor="@color/white" />
+
+</RelativeLayout>
