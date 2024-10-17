@@ -24,5 +24,13 @@
         android:text="Final Grade xx -> x ETS"
         android:textSize="16dp"/>
 
+    <RelativeLayout
+        android:id="@+id/backgroundDivider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignBottom="@+id/disciplineNameShow"
+        android:background="@color/orange"
+        android:layout_marginHorizontal="16dp"/>
+
 
 </RelativeLayout>

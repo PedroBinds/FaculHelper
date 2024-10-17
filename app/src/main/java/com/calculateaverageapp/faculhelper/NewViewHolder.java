@@ -11,10 +11,12 @@ public class NewViewHolder extends RecyclerView.ViewHolder {
 
     TextView textView;
     RelativeLayout relativeLayout;
+    RelativeLayout background;
 
     public NewViewHolder(@NonNull View itemView) {
         super(itemView);
         textView = itemView.findViewById(R.id.disciplineNameRemove);
         relativeLayout = itemView.findViewById(R.id.relativeLayoutRemove);
+        background = itemView.findViewById(R.id.backgroundDividerSimple);
     }
 }

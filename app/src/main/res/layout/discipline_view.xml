@@ -14,5 +14,13 @@
         android:text="Example"
         android:textSize="32dp"/>
 
+    <RelativeLayout
+        android:id="@+id/backgroundDividerSimple"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignBottom="@+id/disciplineNameRemove"
+        android:background="@color/orange"
+        android:layout_marginHorizontal="16dp"/>
+
 
 </RelativeLayout>

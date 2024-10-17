@@ -2,6 +2,7 @@ package com.calculateaverageapp.faculhelper;
 
 import android.content.Context;
 import android.view.LayoutInflater;
+import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
@@ -36,6 +37,9 @@ public class AdapterShowDisciplines extends RecyclerView.Adapter<ViewHolderShowD
         String message = "Final Grade: " + discipline.getFinalGrade() + " -> " + discipline.getCredits() + " ETS";
         holder.details.setText(message);
         holder.relativeLayout.setOnClickListener(view -> listener.onItemClicked(discipline));
+        if (position == disciplines.size() - 1) {
+            holder.backgroundDivider.setVisibility(View.GONE);
+        }
     }
 
     @Override

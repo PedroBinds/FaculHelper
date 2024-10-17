@@ -88,7 +88,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:text="Copyright© 2024\nPedro Ferreira"
+        android:text="Made by\nPedro Ferreira"
         android:textColor="@color/orange"
         android:layout_margin="32dp"
         android:layout_centerHorizontal="true"

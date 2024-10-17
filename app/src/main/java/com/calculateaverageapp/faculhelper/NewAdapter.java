@@ -2,6 +2,7 @@ package com.calculateaverageapp.faculhelper;
 
 import android.content.Context;
 import android.view.LayoutInflater;
+import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
@@ -34,6 +35,9 @@ public class NewAdapter extends RecyclerView.Adapter<NewViewHolder> {
         holder.textView.setText(disciplines.get(position).getName());
 
         holder.relativeLayout.setOnClickListener(view -> listener.onItemClicked(disciplines.get(position)));
+        if (position == disciplines.size() - 1) {
+            holder.background.setVisibility(View.GONE);
+        }
     }
 
     @Override
