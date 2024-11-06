@@ -13,4 +13,4 @@ It's built in Java and aims to make it easy for students to track their grades a
 * Android device: version 8 or higher
 
 ## Screenshots
-![Main Page](MainPageScreenshot.jpg)
+![Main Page](MainPageScreenshot.png)
