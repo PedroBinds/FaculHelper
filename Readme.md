@@ -1,5 +1,5 @@
 # FaculHelper
-This is an android application helps students to calculate the average of their course's subjects.
+This is an android application that helps students to calculate the average of their course's subjects.
 It's built in Java and aims to make it easy for students to track their grades across different subjects.
 
 ## Features
